@@ -1,2 +1,2 @@
 # RentACar
-Simple application that emulate car rental company
+Simple application that emulate work of car rental company
