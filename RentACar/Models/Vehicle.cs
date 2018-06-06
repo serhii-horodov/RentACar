@@ -7,13 +7,15 @@ namespace RentACar.Models
 {
     public class Vehicle
     {
-        public int VechicleID { get; set; }
+        public int VechicleID { get; set; } // add in economy
 
         public string Rego { get; set; }
 
-        public  string Make { get; set; }
+        public  string Made { get; set; }
 
         public string Model { get; set; }
+
+        public string Year { get; set; }
 
         public string VehicleClass { get; set; }
 
@@ -27,7 +29,7 @@ namespace RentACar.Models
 
         public bool SunRoof { get; set; }
 
-        public string Colour { get; set; }
+        public string Color { get; set; }
 
         public int DailyRate { get; set; }
 
