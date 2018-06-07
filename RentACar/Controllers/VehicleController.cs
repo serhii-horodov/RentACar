@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using RentACar.DataEntities;
 
 namespace RentACar.Controllers
 {
     public class VehicleController : Controller
     {
+        RentACarDBEntities rentDB = new RentACarDBEntities();
         // GET: Vehicle
         public ActionResult Index()
         {
-            return View();
+            var vehicles = rentDB.Vehicle;
+
+            return View(vehicles);
         }
 
         // GET: Vehicle/Details/5
